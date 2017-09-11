@@ -267,9 +267,6 @@
 \newcommand{\Work}[1]{ \begin{center} {\large \tb{#1}} \end{center} }
 
 
-% ##############################
-% Oznaczenia dla Reeda, Simona
-
 \newcommand{\ci}{\circ}
 
 % Przestrzenie Hilberta
@@ -277,25 +274,22 @@
 \newcommand{\SP}[2]{( #1, \, #2 )} % Scalar product.
 \newcommand{\dket}[2]{\lket #1, \, #2 \rket} % Dirac ket
 
-% % Sumy
-% \newcommand{\Sum}{\sum\limits}
 
-% % Różniczkowanie i pochodne
-% \newcommand{\pr}{\partial}
-% \newcommand{\de}{\mr{d}}
-% \newcommand{\dd}[3]{\fr{ \de^{ #1 } { #2 } }{ \de { #3 }^{ #1 } }}
-% \newcommand{\pd}[3]{\fr{ \pr^{ #1 } { #2 } }{ \pr { #3 }^{ #1 } }}
+% ##############################
+% Oznaczenia dla książki Spałka
 
-% % Całki
-% \newcommand{\Int}{\int\limits}
-% \newcommand{\IntA}[1]{\Int_{ -\infty }^{ +\infty } \de #1 \;}
-% \newcommand{\IntB}[1]{\int_{ \R } \de #1 \;}
-% \newcommand{\IntC}[1]{\Int_{ 0 }^{ +\infty } \de #1 \;}
-% \newcommand{\IntCa}[2]{ \Int #1 \, \de#2 } % Juz z calkowaniem
-% \newcommand{\IntFi}[2]{ \Int \de#1 \, #2 } % Bardziej Fizyczna notacja;)
-% \newcommand{\IntWie}[3]{ \int_{ #1 } \de^{ #2 }#3 \; } % Wielowymiarowa.
-% \newcommand{\IntDo}[5]{ \Int_{ #1 } \de^{ #2 }#3\, \de^{ #4 } #5 \; }
-% \newcommand{\IntL}[3]{ \int\limits_{ { #1 } }^{ { #2 } } \d#3 \; }
+\newcommand{\bd}{\boldsymbol}
+
+\newcommand{\br}{\mathbf{ r }} % Bold r
+\newcommand{\brj}{\br_{ 1 }}
+\newcommand{\brd}{\br_{ 2 }}
+
+\newcommand{\bk}{\mathbf{ k }}
+
+\newcommand{\Vr}{V( \br )}
+
+
+
 
 
 
@@ -308,7 +302,7 @@
 % ########################################
 \Main{
   Fizyka różne działy, \\
-  błędy i~uwagi
+  błędy i~uwagi } \vspace{\spaceThree}
 % ########################################
 
 
@@ -316,14 +310,33 @@
 % ####################
 \Work{
   Józef Spałek \\
-  ,,Wstęp do~fizyki materii skondensowanej''
+  ,,Wstęp do~fizyki materii skondensowanej'',
   \cite{SpalekWstepDoFizykiMateriiSkondensowanej15} }
 
 \CenterTB{Uwagi}
 
-\start \tb{Str.~8, rysunek~1.1.}
+\start \tb{Str.~8, rysunek~1.1.} Obszar zakreskowany jest tak gęsto,
+że~jeśli nie przyglądnąć~się z~bliska, to wygląda jak jednolicie
+pokryty farbą o~kolorze pomiędzy ciemną czerwienią, a~pomarańczowym.
 
 \vspace{\spaceFour}
+
+
+\start \tb{Str.~8, rysunek~1.1.} Jak rozumiem umieszczenie na~osi~$y$
+oznaczenia $\Vr$, $\eps$ ma symbolizować, że~na tej osi jest
+obrazowana jednocześnie energia potencjalna $\Vr$ i~energia elektronu
+$\eps$.
+
+\vspace{\spaceFour}
+
+
+\start \StrWd{10} Rozróżnienie na~cechy korpuskularne i~falowe, jest
+nie tylko XIX\dywiz wieczne, ale też bardzo niewygodne
+i~problematyczne, przynajmniej w~mojej osobistej opinii. Dlatego
+należałoby je już odrzucić, jako przestarzałe. Jest wszak już XXI~wiek.
+
+\start \StrWd{10}{4} Symbol $\dd{}{}{ \mathbf{k} }$ należy tu rozumieć
+w~ten sposób, że~jest to gradient funkcji skalarnej zależnej od~$\bk$.
 
 % \noi \tb{Rozdział I.}
 
@@ -337,21 +350,21 @@
 
 \newpage
 
-% \CenterTB{Błędy}
-% \begin{center}
-%   \begin{tabular}{|c|c|c|c|c|}
-%     \hline
-%     & \multicolumn{2}{c|}{} & & \\
-%     Strona & \multicolumn{2}{c|}{Wiersz}& Jest & Powinno być \\ \cline{2-3}
-%     & Od góry & Od dołu &  &  \\ \hline
-    % & & & & \\
-    % & & & & \\
-    % & & & & \\
-    % & & & & \\
-    % & & & & \\
-%     \hline
-%   \end{tabular}
-% \end{center}
+\CenterTB{Błędy}
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    & \multicolumn{2}{c|}{} & & \\
+    Strona & \multicolumn{2}{c|}{Wiersz}& Jest & Powinno być \\ \cline{2-3}
+    & Od góry & Od dołu &  &  \\ \hline
+    12 & & 8 & (1.13){ }{ }\emph{wymaga} & (1.13) \emph{wymaga} \\
+        %     & & & & \\
+        %     & & & & \\
+        %     & & & & \\
+        %     & & & & \\
+    \hline
+  \end{tabular}
+\end{center}
 % \noi
 % \tb{Grzbiet} \\
 % \Jest REVSED \\
