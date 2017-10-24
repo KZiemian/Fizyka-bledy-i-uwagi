@@ -200,6 +200,7 @@
 \newcommand{\pr}{\partial}
 \newcommand{\de}{\mr{d}}
 \newcommand{\dd}[3]{\fr{ \de^{ #1 } { #2 } }{ \de { #3 }^{ #1 } }}
+\newcommand{\ddi}[3]{\fr{ d^{ #1 } { #2 } }{ d { #3 }^{ #1 } }} % Italic
 \newcommand{\pd}[3]{\fr{ \pr^{ #1 } { #2 } }{ \pr { #3 }^{ #1 } }}
 
 % Powszechnie używane symbole
@@ -469,25 +470,40 @@
 
 \CenterTB{Uwagi}
 
-\CenterTB{Błędy}
-\begin{center}
-  \begin{tabular}{|c|c|c|c|c|}
-    \hline
-    & \multicolumn{2}{c|}{} & & \\
-    Strona & \multicolumn{2}{c|}{Wiersz} & Jest & Powinno być \\ \cline{2-3}
-    & Od góry & Od dołu &  &  \\ \hline
-    7 & & 11 & $0,\ld,\!3$ & $0,\ld, 3$ \\
-    11 & 5 & & $\ten{ \check{ \La } }{ _{ \mu }^{ \nu } }$
-           & $\ten{ \check{ \La } }{ ^{ \mu }_{ \nu } }$ \\
-    11 & 6 & & $( \La^{ T } )^{ -1 }$ & $\La^{ -1 }$ \\
-    % & & & & \\
-    % & & & & \\
-    % & & & & \\
-    & & & & \\ \hline
-  \end{tabular}
-\end{center}
+\start \Str{4} Związek między omawianymi na tej stronie równaniami (1.4) i~(1.5) można wyjaśnić w~następujący sposób. Sama postać (1.4)~sugeruje, że~należy rozpatrzyć następujące równanie
+\begin{equation}
+  \label{eq:ArodzHadasz-01}
+  mR^{ 2 } \ddi{ 2 }{ \vp( x_{ i }, t ) }{ t }
+  = -mgR \sin\vp( x_{ i }, t )
+  + \kappa a \pd{ 2 }{ \vp( x, t ) }{ x }\bigg|_{ x = x_{ i } }.
+\end{equation}
+Jednak to równanie obowiązuje tylko dla punktów $x_{ i }$ w~których znajdują wahadła, za to dla dowolnego $t \in \R$. Poprzednio już założyliśmy istnienie funkcji $\vp( x , t )$ interpolującej między tymi punktami. Teraz przyjmujemy, że~również dla każdego $x \in ( x_{ i }, x_{ i + 1 } )$, $i = -M,\ld, N - 1$ spełniony jest związek wyrażony równaniem \eqref{eq:ArodzHadasz-01}, czyli
+\begin{equation}
+  \label{eq:ArodzHadasz-02}
+    mR^{ 2 } \pd{ 2 }{ \vp( x_{ i }, t ) }{ t }
+  = -mgR \sin\vp( x_{ i }, t ) + \kappa a \pd{ 2 }{ \vp( x, t ) }{ x }.
+\end{equation}
+A~to jest właśnie równanie (1.5).
 
-\vspace{\spaceTwo}
+% \CenterTB{Błędy}
+% \begin{center}
+%   \begin{tabular}{|c|c|c|c|c|}
+%     \hline
+%     & \multicolumn{2}{c|}{} & & \\
+%     Strona & \multicolumn{2}{c|}{Wiersz} & Jest & Powinno być \\ \cline{2-3}
+%     & Od góry & Od dołu &  &  \\ \hline
+%     7 & & 11 & $0,\ld,\!3$ & $0,\ld, 3$ \\
+%     11 & 5 & & $\ten{ \check{ \La } }{ _{ \mu }^{ \nu } }$
+%            & $\ten{ \check{ \La } }{ ^{ \mu }_{ \nu } }$ \\
+%     11 & 6 & & $( \La^{ T } )^{ -1 }$ & $\La^{ -1 }$ \\
+%     % & & & & \\
+%     % & & & & \\
+%     % & & & & \\
+%     & & & & \\ \hline
+%   \end{tabular}
+% \end{center}
+
+% \vspace{\spaceTwo}
 
 
 
@@ -608,115 +624,6 @@
 % \vspace{\spaceTwo}
 
 
-
-
-
-% ####################
-\Work{
-  Raymond F. Streater, Arthur S. Wightman \\
-  ,,PCT, Spin and Statistic, and All That'',
-  \cite{StreaterWightmanPCT00} }
-
-
-\CenterTB{Uwagi}
-
-\start \Str{5}
-
-\vspace{\spaceFour}
-
-
-\start \Str{10} Nie omówiono zagadnienia
-$\sgn\ten{( \La_{ 1 } \La_{ 2 } )}{^0_0}$ dla iloczynu dwóch
-transformacji Lorentza.
-
-
-
-
-
-
-
-
-
-
-% \newpage
-
-% \CenterTB{Błędy}
-% \begin{center}
-%   \begin{tabular}{|c|c|c|c|c|}
-%     \hline
-%     & \multicolumn{2}{c|}{} & & \\
-%     Strona & \multicolumn{2}{c|}{Wiersz} & Jest & Powinno być \\ \cline{2-3}
-%     & Od góry & Od dołu &  &  \\ \hline
-%     % & & & & \\
-%     % & & & & \\
-%     % & & & & \\
-%     % & & & & \\
-%     % & & & & \\
-%     % & & & & \\
-%     % & & & & \\
-%     % & & & & \\
-%     % & & & & \\
-%     \hline
-%   \end{tabular}
-% \end{center}
-
-% \vspace{\spaceTwo}
-
-
-
-
-
-% % ####################
-% \Work{
-%   Steven Weinberg \\
-%   ,,Teoria pól kwantowych. Podstawy.'', \cite{Wei12}.}
-
-
-% \CenterTB{Uwagi}
-% \begin{itemize}
-% \item Str. 79. Z faktu, że istnieje macierz odwrotna do
-%   $\eta_{ \mu \nu } \La^{ \mu }_{ \rho }$????!!!!!
-% \item
-% \end{itemize}
-
-
-% \CenterTB{Błędy}
-% \begin{center}
-%   \begin{tabular}{|c|c|c|c|c|}
-%     \hline
-%     & \multicolumn{2}{c|}{} & & \\
-%     Strona & \multicolumn{2}{c|}{Wiersz} & Jest & Powinno być \\ \cline{2-3}
-%     & Od góry & Od dołu &  &  \\ \hline
-%     31 & 4 & & $-c^{ 2 } \hbar^{ 2 }$ & $+c^{ 2 } \hbar^{ 2 }$ \\
-%     52 & 14 & & $b^{ \da }( \bd{ k } ) \exp( i \om_{ \bd{ k } } t )$
-%            & $b^{ \da }( \bd{ k } ) \exp( +i \om_{ \bd{ k } } t )$ \\
-%     59 & & 4 & Heinsenberg [72[ & Heinsenberg [72] \\ % Zła pisownia.
-%     60 & 5 & & przyspieszone & przyśpieszone \\
-%     70 & 2 & & 1961. & 1961). \\
-%     79 & 3 & & $\eta_{ \mu \nu } dx^{ ' \mu } dx^{ ' \nu }$
-%            & $\eta_{ \mu \nu } dx'^{ \mu } dx'^{ \nu }$ \\
-%     79 & 5 & & $\eta_{ \mu \nu } \pd{}{ x^{ ' \mu } }{ x^{ \rho } }
-%                \pd{}{ x^{ ' \nu } }{ x^{ \sigma } }$
-%            & $\eta_{ \mu \nu } \pd{}{ x'^{ \mu } }{ x^{ \rho } }
-%              \pd{}{ x'^{ \nu } }{ x^{ \s } }$ \\
-%     86 & & 2 & $\La_{ \rho }^{ -1 \mu } P^{ \rho }$
-%            & $\ten[]{ ( \La^{ -1 } ) }{ ^\mu_\rho } P^{ \rho }$ \\
-%     282 & 1 & & $S_{ \bd{ p }_{ 1 }', \s_{ 1 }', n_{ 1 }'; \,
-%                 \bd{ p }_{ 2 }', \s_{ 2 }', n_{ 2 }';\; \cdots, \;
-%                 \bd{ p }_{ 1 }, \s_{ 1 }, n_{ 1 } ; \, \ld{ p }_{ 2 },
-%                 \s_{ 2 }, n_{ 2 }; \, \cdots }$
-%            & $S_{ \bd{ p }_{ 1 }', \s_{ 1 }', n_{ 1 }'; \, \bd{ p }_{ 2 }',
-%              \s_{ 2 }', n_{ 2 }';\; \cdots; \; \bd{ p }_{ 1 }, \s_{ 1 },
-%              n_{ 1 } ; \, \bd{ p }_{ 2 }, \s_{ 2 }, n_{ 2 }; \, \cdots }$ \\
-%     & & & & \\ \hline
-%   \end{tabular}
-% \end{center}
-
-% \begin{itemize}
-% \item[--] Str. 85. \ldots
-% \item[--] Str. 86. Równania (2.5.1) i\ldots
-% \item[--] Str. 86. równanie na dole
-% \end{itemize}
 
 
 
