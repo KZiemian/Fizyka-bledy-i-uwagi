@@ -388,29 +388,23 @@
 
 % --------------------------------------------------------------------
 % Komendy zdefiniowane konkretnie dla tego pliku:
-% M-Reed-B-Simon.tex
+% Mechanika-błędy-i-uwagi.tex
 % --------------------------------------------------------------------
 
-\newcommand{\ci}{\circ}
+% ##########
+% Oznaczenia dla książki Skalmierskiego
 
-% Przestrzenie Hilberta
-\newcommand{\lcd}{\ell_{ 2 }}  % l Caligraphy Dwa
-\newcommand{\SP}[2]{( #1, \, #2 )}  % Scalar product.
-\newcommand{\dket}[2]{\lket #1, \, #2 \rket}  % Dirac ket
+\newcommand{\eb}{\bd{e}} % e boldsymbol
+\newcommand{\ebd}{\dot{ \eb }} % e boldsymbol dot
 
-\newcommand{\vpk}{\vp_{ k }}
-\newcommand{\psil}{\psi_{ l }}
+\newcommand{\vb}{\bd{v}} % v boldsymbol
 
-% % Całki
-% \newcommand{\Int}{\int\limits}
-% \newcommand{\IntA}[1]{\Int_{ -\infty }^{ +\infty } \de #1 \;}
-% \newcommand{\IntB}[1]{\int_{ \R } \de #1 \;}
-% \newcommand{\IntC}[1]{\Int_{ 0 }^{ +\infty } \de #1 \;}
-% \newcommand{\IntCa}[2]{ \Int #1 \, \de#2 } % Juz z calkowaniem
-% \newcommand{\IntFi}[2]{ \Int \de#1 \, #2 } % Bardziej Fizyczna notacja;)
-% \newcommand{\IntWie}[3]{ \int_{ #1 } \de^{ #2 }#3 \; } % Wielowymiarowa.
-% \newcommand{\IntDo}[5]{ \Int_{ #1 } \de^{ #2 }#3\, \de^{ #4 } #5 \; }
-% \newcommand{\IntL}[3]{ \int\limits_{ { #1 } }^{ { #2 } } \d#3 \; }
+% Wersory
+\newcommand{\ib}{\bd{i}}
+\newcommand{\jb}{\bd{j}}
+\newcommand{\kb}{\bd{k}}
+
+\newcommand{\dotx}{\dot{ x }}
 
 
 
@@ -433,18 +427,6 @@
 
 
 
-
-% ####################
-% Uproszczenia w pisaniu tekstu
-\newcommand{\ld}{\ldots}
-
-% Slashe w tekście
-\newcommand{\tbs}{\textbackslash}
-
-% Podstawowe oznaczenia matematyczne
-\newcommand{\fr}{\frac}
-\newcommand{\tfr}{\tfrac}
-\newcommand{\tr}{\textrm}
 
 % Oznaczenia ,,nad i pod''. Wymyśl lepszą nazwę
 \newcommand{\til}{\tilde}
@@ -683,20 +665,6 @@
 
 
 
-% ####################
-% Oznaczenia dla książki Skalmierskiego
-
-\newcommand{\eb}{\bd{e}} % e boldsymbol
-\newcommand{\ebd}{\dot{ \eb }} % e boldsymbol dot
-
-\newcommand{\vb}{\bd{v}} % v boldsymbol
-
-% Wersory
-\newcommand{\ib}{\bd{i}}
-\newcommand{\jb}{\bd{j}}
-\newcommand{\kb}{\bd{k}}
-
-\newcommand{\dotx}{\dot{ x }}
 
 
 
@@ -711,7 +679,7 @@
 
 
 % ########################################
-\Field{Mechanika --~błędy i~uwagi}
+\Main{Mechanika --~błędy i~uwagi} % Tytuł całego tekstu
 
 \vspace{\spaceTwo}
 % ########################################
@@ -837,6 +805,7 @@ obliczyć pewne parametry ruchu drugiej.
 
 
 % ####################
+% Tytuł i autor dzieła
 \Work{
   Bogdan Skalmierski \\
   ,,Mechanika z~wytrzymałością materiałów'', \cite{Ska83} }
@@ -871,49 +840,50 @@ do~$\eb_{ 2 }$.
     & \multicolumn{2}{c|}{} & & \\
     Strona & \multicolumn{2}{c|}{Wiersz}& Jest & Powinno być \\ \cline{2-3}
     & Od góry & Od dołu &  &  \\ \hline
-    12 & 16 & & można określić & będziemy oznaczali \\
-    13 & & 10 & $\mathbf{ b }_{ y }$ & $\mathbf{ a }_{ y }$ \\
-    17 & 3 & & $(\mathbf{ a } \cdot \mathbf{ c } ) \cdot \mathbf{ b }
+    12  & 16 & & można określić & będziemy oznaczali \\
+    13  & & 10 & $\mathbf{ b }_{ y }$ & $\mathbf{ a }_{ y }$ \\
+    17  &  3 & & $(\mathbf{ a } \cdot \mathbf{ c } ) \cdot \mathbf{ b }
                - ( \mathbf{ c } \cdot \mathbf{ b } ) \cdot \mathbf{ a }$
            & $(\mathbf{ a } \cdot \mathbf{ c } ) \mathbf{ b }
              - ( \mathbf{ c } \cdot \mathbf{ b } ) \mathbf{ a }$ \\
-    21 & 4 & & $\frac{ y }{ { }_{ 0 } }$ & $\frac{ y }{ { y }_{ 0 } }$ \\
-    21 & 4 & & $\sqrt{ 1 \:\: \left( \frac{ x }{ x_{ 0 } }
+    21  &  4 & & $\frac{ y }{ { }_{ 0 } }$ & $\frac{ y }{ { y }_{ 0 } }$ \\
+    21  &  4 & & $\sqrt{ 1 \:\: \left( \frac{ x }{ x_{ 0 } }
                \right)^{ 2 } } $
            & $\sqrt{ 1 - \left( \frac{ x }{ x_{ 0 } } \right)^{ 2 } } $ \\
-    23 & & 9 & $+2\beta \cos( 2\omega t )$ & $-2\beta
+    23  & &  9 & $+2\beta \cos( 2\omega t )$ & $-2\beta
                                              \cos( 2\omega t )$ \\
-    31 & 13 & & $x_{ 2 } \pd{}{ x_{ 2 } }{ r }$
+    31  & 13 & & $x_{ 2 } \pd{}{ x_{ 2 } }{ r }$
            & $\dot{ x }_{ 2 } \pd{}{ x_{ 2 } }{ r }$ \\
-    31 & & 5 & $\mathbf{ a } \pd{}{ \mathbf{ r } }{ q_{ j } }$
+    31  & &  5 & $\mathbf{ a } \pd{}{ \mathbf{ r } }{ q_{ j } }$
            & $\mathbf{ a } \cdot \pd{}{ \mathbf{ r } }{ q_{ j } }$ \\
-    32 & 8 & & $\pd{}{ { \mathbf{ r }^{ 2 } } }{ { q^{ j } } }$
+    32  &  8 & & $\pd{}{ { \mathbf{ r }^{ 2 } } }{ { q^{ j } } }$
            & $\pd{}{ \mathbf{ r } }{ { q^{ j } } }$ \\
-    34 & 6 & & $\dot{ \mathbf{ e } }_{ i } \mathbf{ e }_{ j }$
+    34  &  6 & & $\dot{ \mathbf{ e } }_{ i } \mathbf{ e }_{ j }$
            & $\dot{ \mathbf{ e } }_{ i } \cdot \mathbf{ e }_{ j }$ \\
-    34 & 8 & & $\mathbf{ e }_{ i } \mathbf{ e }_{ j }$
+    34  &  8 & & $\mathbf{ e }_{ i } \mathbf{ e }_{ j }$
            & $\mathbf{ e }_{ i } \cdot \mathbf{ e }_{ j }$ \\
-    34 & 10 & & $\dot{ \mathbf{ e } }_{ i } \mathbf{ e }_{ j }
+    34  & 10 & & $\dot{ \mathbf{ e } }_{ i } \mathbf{ e }_{ j }
                 + \mathbf{ e }_{ i } \dot{ \mathbf{ e } }_{ j }$
            & $\dot{ \mathbf{ e } }_{ i } \cdot \mathbf{ e }_{ j }
              + \mathbf{ e }_{ i } \cdot \dot{ \mathbf{ e } }_{ j }$ \\
-    34 & 11 & & $\dot{ \mathbf{ e } }_{ i } \mathbf{ e }_{ j }$
+    34  & 11 & & $\dot{ \mathbf{ e } }_{ i } \mathbf{ e }_{ j }$
            & $\dot{ \mathbf{ e } }_{ i } \cdot \mathbf{ e }_{ j }$ \\
-    34 & 12 & & $\dot{ \mathbf{ e } }_{ i } \mathbf{ e }_{ j }$
+    34  & 12 & & $\dot{ \mathbf{ e } }_{ i } \mathbf{ e }_{ j }$
            & $\dot{ \mathbf{ e } }_{ i } \cdot \mathbf{ e }_{ j }$ \\
-    36 & 16 & & $( \xi_{ 1 } \dot{ \mathbf{ e } }_{ 1 } + \xi_{ 2 }
+    36  & 16 & & $( \xi_{ 1 } \dot{ \mathbf{ e } }_{ 1 } + \xi_{ 2 }
                 \dot{ \mathbf{ e } }_{ 2 }  ) \mathbf{ e }_{ 1 }$
            & $( \xi_{ 1 } \dot{ \mathbf{ e } }_{ 1 } + \xi_{ 2 }
              \dot{ \mathbf{ e } }_{ 2 }  ) \cdot \mathbf{ e }_{ 1 }$ \\
-    36 & 16 & & $( \xi_{ 1 } \dot{ \mathbf{ e } }_{ 1 } + \xi_{ 2 }
+    36  & 16 & & $( \xi_{ 1 } \dot{ \mathbf{ e } }_{ 1 } + \xi_{ 2 }
                 \dot{ \mf{ e } }_{ 2 }  ) \mf{ e }_{ 2 }$
            & $( \xi_{ 1 } \dot{ \mf{ e } }_{ 1 } + \xi_{ 2 }
              \dot{ \mf{ e } }_{ 2 }  ) \cdot \mf{ e }_{ 2 }$ \\
-    36 & 18 & & $\dot{ \mf{ e } }_{ 1 } \mf{ e }_{ 2 }$
+    36  & 18 & & $\dot{ \mf{ e } }_{ 1 } \mf{ e }_{ 2 }$
            & $\dot{ \mf{ e } }_{ 1 } \cdot \mf{ e }_{ 2 }$ \\
-    36 & 20 & & $\dot{ \mf{ e } }_{ 1 } \mf{ e }_{ 2 }$
+    36  & 20 & & $\dot{ \mf{ e } }_{ 1 } \mf{ e }_{ 2 }$
            & $\dot{ \mf{ e } }_{ 1 } \cdot \mf{ e }_{ 2 }$ \\
-    & & & & \\ \hline
+    % & & & & \\
+    \hline
   \end{tabular}
 \end{center}
 \noi
@@ -929,10 +899,12 @@ do~$\eb_{ 2 }$.
 
 
 
-% ####################################################################
-% ####################################################################
+% #####################################################################
+% #####################################################################
+% Bibliografia
 \bibliographystyle{alpha} \bibliography{Bibliography}{}
 
 
-
+% ############################
+% Koniec dokumentu
 \end{document}
