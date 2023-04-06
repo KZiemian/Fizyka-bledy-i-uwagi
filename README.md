@@ -1,2 +1,2 @@
 # Fizyka-bledy-i-uwagi
-Lista błędów i uwag do różnych książek z fizyki
+Repozytorium na razie nie wydaje się potrzebne.
